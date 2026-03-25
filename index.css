@@ -1,0 +1,151 @@
+/* ===== STYLES PAGE ACCUEIL ===== */
+
+/* Section héro */
+.hero {
+    padding: 80px 40px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.hero p.intro {
+    color: #00bcd4;
+    font-size: 0.85rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    color: #ffffff;
+    margin-bottom: 15px;
+    line-height: 1.1;
+}
+
+.hero h1 span {
+    color: #00bcd4;
+}
+
+.hero p.description {
+    color: #888;
+    max-width: 500px;
+    margin-bottom: 35px;
+    font-size: 0.9rem;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 15px;
+}
+
+.btn {
+    padding: 10px 25px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 0.85rem;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: all 0.3s;
+}
+
+.btn-primary {
+    background-color: #00bcd4;
+    color: #000000;
+    border: 2px solid #00bcd4;
+    font-weight: bold;
+}
+
+.btn-primary:hover {
+    background-color: transparent;
+    color: #00bcd4;
+}
+
+.btn-secondary {
+    background-color: transparent;
+    color: #d0d0d0;
+    border: 2px solid #333;
+}
+
+.btn-secondary:hover {
+    border-color: #00bcd4;
+    color: #00bcd4;
+}
+
+/* Section à propos */
+.section-apropos {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 60px 40px;
+    border-top: 1px solid #2a2a2a;
+}
+
+.section-apropos h2 {
+    font-size: 1.8rem;
+    color: #ffffff;
+    margin-bottom: 5px;
+}
+
+.section-apropos h2 span {
+    color: #00bcd4;
+}
+
+.sous-titre {
+    color: #555;
+    font-size: 0.75rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+
+.apropos-contenu {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+}
+
+.apropos-texte p {
+    margin-bottom: 12px;
+    font-size: 0.88rem;
+    color: #aaa;
+}
+
+.apropos-texte p strong {
+    color: #00bcd4;
+}
+
+/* Tableau infos */
+.tableau-infos {
+    background-color: #1a1a1a;
+    border: 1px solid #2a2a2a;
+    border-radius: 6px;
+    padding: 20px;
+}
+
+.tableau-infos table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.tableau-infos td {
+    padding: 8px 0;
+    font-size: 0.82rem;
+    border-bottom: 1px solid #2a2a2a;
+}
+
+.tableau-infos td:first-child {
+    color: #555;
+    width: 45%;
+}
+
+.tableau-infos td:last-child {
+    color: #00bcd4;
+}
+
+.tableau-infos tr:last-child td {
+    border-bottom: none;
+}
+
+/* Responsive */
+@media (max-width: 620px) {
+    .hero h1 { font-size: 2rem; }
+    .apropos-contenu { grid-template-columns: 1fr; }
+}

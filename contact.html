@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Issa Abdel Aziz</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/contact.css">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav>
+        <div class="logo">Issa.A.A</div>
+        <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="competences.html">Compétences</a></li>
+            <li><a href="contact.html" class="active">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Contenu principal -->
+    <main class="page-contact">
+
+        <p class="sous-titre">// Me joindre</p>
+        <h2>Me <span>Contacter</span></h2>
+
+        <p class="contact-description">
+            Tu as un projet, une question ou tu veux simplement échanger ? 
+            N'hésite pas à me contacter directement sur WhatsApp.
+        </p>
+
+        <!-- Carte WhatsApp -->
+        <div class="carte-whatsapp">
+            <div class="whatsapp-icone">💬</div>
+            <div class="whatsapp-info">
+                <div class="label">WhatsApp</div>
+                <div class="numero">+237 6 95 57 71 52</div>
+                <a href="https://wa.me/237695577152" target="_blank">
+                    Ouvrir WhatsApp →
+                </a>
+            </div>
+        </div>
+
+        <!-- Formulaire de contact -->
+        <div class="formulaire-contact">
+            <h3>Ou envoie-moi un message ici :</h3>
+
+            <form id="mon-formulaire" onsubmit="envoyerMessage(event)">
+
+                <div class="champ">
+                    <label for="nom">Votre nom</label>
+                    <input type="text" id="nom" name="nom" placeholder="Entrez votre nom" required>
+                </div>
+
+                <div class="champ">
+                    <label for="email">Votre email</label>
+                    <input type="email" id="email" name="email" placeholder="exemple@mail.com" required>
+                </div>
+
+                <div class="champ">
+                    <label for="message">Votre message</label>
+                    <textarea id="message" name="message" rows="5" placeholder="Écrivez votre message ici..." required></textarea>
+                </div>
+
+                <button type="submit" class="btn-envoyer">Envoyer le message</button>
+                <p id="message-confirmation">✅ Votre message a bien été envoyé !</p>
+
+            </form>
+        </div>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>Développé par <span>Issa Abdel Aziz</span> &mdash; 2026</p>
+    </footer>
+
+    <script>
+        function envoyerMessage(event) {
+            event.preventDefault();
+            var confirmation = document.getElementById('message-confirmation');
+            confirmation.style.display = 'block';
+            document.getElementById('mon-formulaire').reset();
+
+            // Masquer le message après 4 secondes
+            setTimeout(function() {
+                confirmation.style.display = 'none';
+            }, 4000);
+        }
+    </script>
+
+</body>
+</html>

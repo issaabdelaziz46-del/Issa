@@ -1,0 +1,158 @@
+/* ===== STYLES PAGE CONTACT ===== */
+
+.page-contact {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 60px 40px;
+}
+
+.page-contact h2 {
+    font-size: 1.8rem;
+    color: #ffffff;
+    margin-bottom: 5px;
+}
+
+.page-contact h2 span {
+    color: #00bcd4;
+}
+
+.sous-titre {
+    color: #555;
+    font-size: 0.75rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+}
+
+.contact-description {
+    color: #888;
+    font-size: 0.88rem;
+    margin-bottom: 35px;
+}
+
+/* Carte WhatsApp */
+.carte-whatsapp {
+    background-color: #1a1a1a;
+    border: 1px solid #2a2a2a;
+    border-radius: 8px;
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 40px;
+    transition: border-color 0.3s;
+}
+
+.carte-whatsapp:hover {
+    border-color: #25d366;
+}
+
+.whatsapp-icone {
+    font-size: 2.5rem;
+    flex-shrink: 0;
+}
+
+.whatsapp-info .label {
+    font-size: 0.72rem;
+    color: #555;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 5px;
+}
+
+.whatsapp-info .numero {
+    font-size: 1.2rem;
+    color: #ffffff;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.whatsapp-info a {
+    display: inline-block;
+    background-color: #25d366;
+    color: #000000;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 0.78rem;
+    font-weight: bold;
+    padding: 7px 18px;
+    border-radius: 4px;
+    transition: opacity 0.3s;
+}
+
+.whatsapp-info a:hover {
+    opacity: 0.8;
+    color: #000;
+}
+
+/* Formulaire */
+.formulaire-contact h3 {
+    color: #ffffff;
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+
+.champ {
+    margin-bottom: 18px;
+}
+
+.champ label {
+    display: block;
+    font-size: 0.75rem;
+    color: #555;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 6px;
+}
+
+.champ input,
+.champ textarea {
+    width: 100%;
+    background-color: #1a1a1a;
+    border: 1px solid #2a2a2a;
+    border-radius: 5px;
+    padding: 10px 14px;
+    color: #d0d0d0;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 0.85rem;
+    outline: none;
+    transition: border-color 0.3s;
+    resize: vertical;
+}
+
+.champ input:focus,
+.champ textarea:focus {
+    border-color: #00bcd4;
+}
+
+.btn-envoyer {
+    background-color: #00bcd4;
+    color: #000000;
+    border: 2px solid #00bcd4;
+    padding: 10px 28px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 0.85rem;
+    font-weight: bold;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.btn-envoyer:hover {
+    background-color: transparent;
+    color: #00bcd4;
+}
+
+#message-confirmation {
+    display: none;
+    margin-top: 15px;
+    color: #00bcd4;
+    font-size: 0.85rem;
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+    .carte-whatsapp {
+        flex-direction: column;
+        text-align: center;
+    }
+}
